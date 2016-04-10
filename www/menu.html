@@ -1,0 +1,49 @@
+<ons-page ng-controller="menu_controller" style="background-color: white">
+
+    <ons-list>
+<!--
+http://fortawesome.github.io/Font-Awesome/examples/
+から icon を持ってくる
+ここでは現在 fa-home , fa-gear , fa-book を使っている
+
+-->
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('page1.html', {closeMenu: true})">
+            <i class="fa fa-home fa-lg" style="color: #666"></i>
+            &nbsp; <span class="t_top_page">Top Page</span>
+        </ons-list-item>
+
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('page3.html', {closeMenu: true})">
+            <i class="fa fa-gear fa-lg" style="color: #666"></i>
+            &nbsp; <span class="t_setting">User Setting</span>
+        </ons-list-item>
+        
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('page4.html', {closeMenu: true})">
+            <i class="fa fa-pen fa-lg" style="color: #666"></i>
+            &nbsp; <span class="t_vote_mine">Vote mine</span>
+        </ons-list-item>
+        
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('page5.html', {closeMenu: true})">
+            <i class="fa fa-book fa-lg" style="color: #666"></i>
+            &nbsp; <span class="t_vote_list">Vote List</span>
+        </ons-list-item>
+        
+
+<!--
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('page2.html', {closeMenu: true})">
+            <i class="fa fa-pen fa-lg" style="color: #666"></i>
+            &nbsp; Page 2
+        </ons-list-item>
+-->
+    </ons-list>
+
+</ons-page>

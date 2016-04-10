@@ -1,0 +1,21 @@
+<ons-page ng-controller="vote_maine_controller">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center"><span class="setting">Setting</span></div>
+    </ons-toolbar>
+
+    <div style="text-align: center">
+        <h1><span class="t_vote_mine">Vote maine</span></h1>
+        
+        <div style="text-align: center">
+            <br>
+            <ons-button class="t_vote_mine_new"
+                onclick="VoteMineNavigator.pushPage('vote_mine_new.html')">
+                Create new vote
+            </ons-button>
+        </div>
+    </div>
+
+</ons-page>

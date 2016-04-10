@@ -1,0 +1,9 @@
+.kurukuru {
+    //display:block;
+    display:none; //初期値は非表示
+    margin:0 auto;
+    margin-bottom: -102px;
+}
+.show_menu{
+    
+}

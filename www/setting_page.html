@@ -1,0 +1,57 @@
+<ons-page ng-controller="setting_controller">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center"><span class="setting">Setting</span></div>
+    </ons-toolbar>
+
+    <div style="text-align: center">
+        <h1><span class="t_user_setting">User Setting</span></h1>
+        
+        <div class="kurukuru">
+        <img src="images/gif-load.gif" />
+        </div>
+        
+        <div>
+        <p class="t_nick_name" style="text-align:left;">nick name</p>
+        <input type="text" class="text-input" id="input_name" placeholder="NickName" 
+        style="margin-top:-15px;display:block;width:100%;">
+        </div>
+        <div>
+        <p class="t_language" style="text-align:left;">language
+        <select id="input_lang" name="language">
+        </select>
+        </p>
+        </div>
+        <div>
+        <p class="t_mail_address" style="text-align:left;">mail address</p>
+        <input type="email" class="text-input" id="input_mail" placeholder="MailAddress" 
+        style="margin-top:-15px;display:block;width:100%;">
+        </div>
+        
+        <div>
+        <p class="t_password" style="text-align:left;">pass word</p>
+        <input type="password" class="text-input" id="input_password" placeholder="PassWord" 
+        pattern="^[0-9A-Za-z]+$" style="margin-top:-15px;display:block;width:100%;">
+        </div>
+        
+        <div>
+        <p class="t_password_cfm" style="text-align:left;">pass word cfm</p>
+        <input type="password" class="text-input" id="input_password_cfm" placeholder="PassWord Retype" 
+        pattern="^[0-9A-Za-z]+$" style="margin-top:-15px;display:block;width:100%;">
+        </div>
+        <input type="hidden" class="t_password_do_not_match" value="Passwords do not match">
+
+        <div style="text-align: center">
+            <br>
+            <ons-button class="t_password_change"
+                onclick="SettingNavigator.pushPage('setting_password.html')">
+                pass word change
+            </ons-button>
+        </div>
+
+        <ons-button class="t_btn_send_user_info" id="btn_send_user_info" style="margin-top:10px;">Send</ons-button>
+    </div>
+
+</ons-page>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    
+    <script>
+        https_flg = true; //http access 結果FLG 成功=true　失敗=false
+    </script>
+    
+    <script src="components/loader.js"></script>
+    
+    <script src="components/vote.js"></script>
+    
+    <script src="components/https.js"></script>
+    
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    //以下の obj は vote.js $(document).ready で設定される
+    var user_obj;
+    var mst_lang_obj;
+    var mst_calss_lang_obj;
+            
+    var module = ons.bootstrap('my-app', ['onsen']);
+    
+    module.controller('menu_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+	    });
+    });
+    
+    
+    module.controller('page1_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+        });
+    });
+    
+    module.controller('page2_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+        });
+    });
+
+    module.controller('page3_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+        });
+    });
+    
+    module.controller('setting_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+            setting_user_info();
+            $("ons-button#btn_send_user_info").click(function(){
+                send_user_info();
+            });
+        });
+    });
+    
+    module.controller('setting_password_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+        });
+    });
+    
+    module.controller('vote_maine_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+        });
+    });
+    
+    module.controller('vote_mine_new_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+        });
+    });
+    
+    module.controller('vote_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+        });
+    });
+    
+    module.controller('vote_post_controller', function($scope) {
+        ons.ready(function() {
+            class_text();
+        });
+    });
+    </script>
+</head>
+
+<body>
+
+    <input name="module" type="hidden" value="Default">
+    
+    <ons-sliding-menu var="app.slidingMenu" menu-page="menu.html" main-page="page1.html" side="left" type="overlay" max-slide-distance="200px">
+    </ons-sliding-menu>
+</body>
+</html>
