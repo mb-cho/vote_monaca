@@ -87,8 +87,6 @@ $(function(){
     //ここから始まる
     $(document).ready(function(){
 //localStorage.clear();
-//2nd
-//3rd
         var user = localStorage.getItem("user");
         if(user == null){//user が無い　＝　初回起動
             var s_url = 'https://net-navi.cc/vote/users/user_entry';
